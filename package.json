@@ -1,9 +1,19 @@
 {
-    "name": "usercsp", 
-    "license": "MPL 2.0", 
-    "author": "Kailas PATIL", 
-    "version": "0.3.2", 
-    "fullName": "UserCSP", 
-    "id": "jid1-BYtv5zBMLU7wZw", 
-    "description": "A UserCSP add-on"
+  "title": "userCSP",
+  "name": "usercsp",
+  "version": "1.1.1",
+  "description": "Allows Users to apply CSP policy for websites",
+  "main": "index.js",
+  "author": "Kailas Patil",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ],
+  "permissions": {
+    "multiprocess": true
+  }
 }

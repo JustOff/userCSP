@@ -1,5 +1,2 @@
-This is the newUserCSPDesign add-on.  It contains:
-
-* A program (lib/main.js).
-* A few tests.
-* Some meager documentation.
+#UserCSP
+Allows Users to apply CSP policy for websites

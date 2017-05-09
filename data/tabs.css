@@ -1,8 +1,9 @@
 div.content {
-    border: #48f solid 3px;
-    clear: left;
-    padding: 1em;
-    line-height:125%; /* @Kailas: To increase new line spacing*/
+    margin: auto;
+    width: 75%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+ /* @Kailas: To increase new line spacing*/
 }
 
 ol#toc {

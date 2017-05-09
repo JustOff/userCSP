@@ -1,7 +1,7 @@
-var cspDirectiveList = ["default-src", "script-src", "object-src", "img-src", "media-src", "style-src", "frame-src", "font-src", "connect-src", "frame-ancestors", "report-uri"];
+var cspDirectiveList = ["default-src", "script-src", "object-src", "img-src", "media-src", "style-src", "child-src", "font-src", "connect-src", "frame-ancestors", "base-uri", "plugin-types", "form-action", "report-uri"];
 
 // Length of each directive
-var cspDirectiveLength =[11, 10, 10, 7, 9, 9, 9, 8, 11, 15, 10];
+var cspDirectiveLength =[11, 10, 10, 7, 9, 9, 9, 8, 11, 15, 8, 12, 11, 10];
 
 // Function to filter CSP directives
 // It removes Null character from userCSP when userCSP fetched from d/b and

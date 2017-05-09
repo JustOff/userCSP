@@ -7,7 +7,7 @@ var clientID = "HTTP";
 var winutils = require('sdk/window/utils');
 const { gBrowser } = winutils.getMostRecentBrowserWindow();
 
-const main = require("main");
+const main = require("index");
 
 //// Functions to retrieve data from cache
 
@@ -117,8 +117,8 @@ const userCSP_progressListener = {
 
 // Event Listener on Browser's Back/Forward Button
 function userCSP_backOrForwardBtnClicked () {
-  //  console.log ("\n\n Back or Forward Button pressed");
-  //  console.log ("\n Current URL = "+tabs.activeTab.url); 
+    console.log ("\n\n Back or Forward Button pressed");
+    console.log ("\n Current URL = "+tabs.activeTab.url); 
     gBrowser.addTabsProgressListener(userCSP_progressListener);
 } // end of userCSP_backOrForwardBtnClicked() function
 

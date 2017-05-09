@@ -4,7 +4,7 @@
 
 // Click on Exit Link on UI
 function exitCSP(e) {
-    var mytext = " Sucessfully Exit from User CSP Add-on UI";
+    var mytext = "Successfully Exit from User CSP Add-on UI";
     addon.port.emit("exitUserCSP", mytext);
 }
 
@@ -13,16 +13,21 @@ function reportIssue(e) {
     addon.port.emit("reportIssue");
 }
 
+
+
 // Function to get inferred CSP Rule array from main 
-function getInferCSPArray(webDomain) {
+
+function getInferCSPArray (webDomain) {
     addon.port.emit("inferCSPArray", webDomain);
 }
 
-// Combine Strict feature
-function getCombineStrict(sitePolicy, userPolicy, webDomain) {
-    addon.port.emit("combineStrictPolicy", sitePolicy, userPolicy, webDomain);
-}
+
 
 function storeUserCSPUState(selectedDomain, userCSPUIState, flag, userCSPAll, userCSPArray) {
     addon.port.emit("storeUserCSPUIState", selectedDomain, userCSPUIState, flag, userCSPAll, userCSPArray);
+}
+
+
+function sendReportState(reportFlag) {
+	addon.port.emit("updateReport", reportFlag);
 }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="tabs.css" rel="stylesheet" type="text/css">
+    <title>Smart Content Security Policy</title>
+    
+    <style>
+		h1 {
+			font-size: 250%;
+			}
+		body { font-size: 100%; }
+		
+select {
+    font-size: 100%;
+    font-family: 'Averia Libre', cursive;
+    
+    
+    font-family: 'Averia Libre';
+}
+        table 
+        {
+            width:100%;
+            border: 0;
+            
+        }
+        td
+        {
+            text-align:left;
+            border: 0;
+        } 
+		
+
+    </style>
+    
+   
+  </head>
+<body>
+	<h1><center>Preferences</center></h1>
+<br>
+<div class="content">
+No Policy Found:     <select>
+<option value="define">Define New Policy</option>
+  <option value="infer">Use Auto-Inferred Policy</option>
+  <option value="nothing">Do Nothing</option>
+  </select>
+<br><br>
+
+Apply Website's Own Policy (if available):
+<input type="checkbox" name="websitePolicy" value="Yes"><br><br>
+
+Auto Infer Policies for All Visited Domains?
+<input type="checkbox" name="autoInfer" value="Yes"><br><br>
+
+In Case Both User Defined and Website's Own Policy Are Present: <select>
+<option value="website">Website's Own Policy</option>
+<option value="user">User Defined Policy</option>
+<option value="loose">Combined Policy (loose)</option>
+<option value="strict">Combined Policy (strict)</option>
+</select> 
+<br><br>
+<a href="smartCSP_UI.html">Back</a>
+ </div>
+</body></html>
